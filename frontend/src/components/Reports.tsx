@@ -9,9 +9,10 @@ export default function Reports() {
     const fetchReports = async () => {
       try {
         const data = await getReports();
-        setReports(data);
+        setReports(data.results || data);
       } catch (err) {
         console.error('Failed to fetch reports');
+        setReports([]);
       } finally {
         setLoading(false);
       }
