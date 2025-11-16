@@ -1,8 +1,4 @@
 Django
 djangorestframework
-django-crontab
 textblob
-celery
-redis
 django-cors-headers
-
